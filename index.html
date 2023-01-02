@@ -3,35 +3,33 @@
     <head>
         <title>Leopard</title>
         <meta charset="utf-8">
-        <style>
-            a{
-                text-decoration: none;color: black;
-            }
-            h1{
-                text-align: center; 
-                font-size: 350%;
-                border-bottom: 1px solid gray;
-                margin: 0;
-                padding: 20px;
-            }
-            body{
-                margin: 0;
-            }
-            ol{
-                border-right: 1px solid gray;
-                margin: 0;
-                width: 120px;
-                padding: 20px;
-                padding-left: 33px;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
+
     </head>
 
     <body>
+        <input type="button" value="dark" onclick="
+            document.querySelector('body').style.backgroundColor = 'black'; 
+            document.querySelector('body').style.color = 'white';
+        ">
+        <input type="button" value="bright" onclick="
+            document.querySelector('body').style.backgroundColor='white';
+            document.querySelector('body').style.color='black';
+
+        ">
+
         <h1><a href="index.html">Gecko Lizard</a></h1>
-        <ol>
-          <li><a href="1.html">Leopard Gecko</a></li>
-          <li><a href="2.html">Crested Gecko</a></li>
-          <li><a href="3.html">Fat Tailed Gecko</a></li>
-        </ol>
+        <div id="grid">
+            <ol>
+            <li><a href="1.html">Leopard Gecko</a></li>
+            <li><a href="2.html">Crested Gecko</a></li>
+            <li><a href="3.html">Fat Tailed Gecko</a></li>
+            </ol>
+            <div id="article">
+                <p>
+                    Geckos are small, mostly carnivorous lizards that have a wide distribution, found on every continent except Antarctica. 
+                </p>
+            </div>
+        </div>
     </body>
+</html>
