@@ -1,0 +1,107 @@
+/* div{
+    border: 1px black solid;
+} */
+body{
+    margin: 0;
+}
+#hello{
+    background-image: url(moana_topFullWall_04f.png);
+    background-position: center;
+    background-size: 1000px 600px;
+    background-repeat: no-repeat;
+}
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.navigation div{
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.header{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    padding-top: 10px;
+}
+#logo{
+    padding-left: 10px;
+}
+.moana{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.moana img{
+    border-radius: 50%;
+}
+.letMeIntroduceMoana{
+    text-align: center;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.navigation a{
+    color: black;
+    text-decoration: none;
+}
+.about div{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    border: solid 2px palevioletred;
+    color: white;
+}
+.about a{
+    color: white;
+    text-decoration: none;
+}
+#introduceMotunui{
+    text-align: center;
+
+}
+.family{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.family div{
+    border: 2px solid white;
+    background: rgb(211, 211, 211, .4);
+    border-radius: 10%;
+    padding: 20px;
+    width: 180px;
+    height: 200px;
+}
+.family img{
+    border-radius: 50%;
+    width: 70px;
+    height: 80px;
+}
+.welcome{
+    background-image: url(motunui.webp);
+    background-position: center;
+    background-size: 1000px 600px;
+    background-repeat: no-repeat;
+}
+.third{
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    padding-top: 100px;
+}
+.lastPic{
+    position: relative;
+}
+#one{
+    z-index: 0;
+}
+#two{
+    z-index: 1;
+
+}
