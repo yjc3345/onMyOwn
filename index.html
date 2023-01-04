@@ -4,33 +4,7 @@
         <title>Leopard</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
-        <script>
-            function setColor(color){
-                var alist = document.querySelectorAll('a');
-                var i = 0
-                while(i < alist.length){
-                    alist[i].style.color = color;
-                    i = i + 1
-                    }
-            }
-            function darkmode(self){
-                var target = document.querySelector('body');
-                if (self.value === 'dark'){ 
-                target.style.backgroundColor = 'black'; 
-                target.style.color = 'white';
-                self.value = 'bright';
-
-                setColor('powderblue');
-            } else {
-                target.style.backgroundColor='white';
-                target.style.color='black';
-                self.value = 'dark';
-
-                setColor('blue');
-            }
-        }
-        </script>
-
+        <script src="color.js"></script>
     </head>
 
     <body>
