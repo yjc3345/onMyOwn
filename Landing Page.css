@@ -1,6 +1,4 @@
-/* div{
-    border: 1px black solid;
-} */
+
 body{
     margin: 0;
 }
@@ -97,11 +95,42 @@ body{
 }
 .lastPic{
     position: relative;
+    top: 0;
+    left: 0;
 }
 #one{
-    z-index: 0;
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    border: 1px solid #000000;
 }
 #two{
-    z-index: 1;
-
+    position: relative;
+    top: 250px;
+    left: 30px;
+    border: 1px solid #000000;
 }
+.moanaPortfolio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 10px;
+    background: rgb(211, 211, 211, .7);
+    border-radius: 2%;
+    width: 350px;
+    height: 150px;
+    margin-left: 40px;
+    padding-left: 40px;
+}
+.third{
+    background-image: url(imageedit_1_8064820982.png);
+    background-position: center;
+    background-size: 1000px 600px;
+    background-repeat: no-repeat;
+}
+.information{
+    margin-bottom: 10px;
+    color: navy;
+}
+/* @media(min-width:1000px){
+    
+} */
