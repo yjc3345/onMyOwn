@@ -102,13 +102,11 @@ body{
     position: absolute;
     top: 120px;
     left: 80px;
-    border: 1px solid #000000;
 }
 #two{
     position: relative;
     top: 250px;
     left: 30px;
-    border: 1px solid #000000;
 }
 .moanaPortfolio{
     display: grid;
@@ -126,11 +124,33 @@ body{
     background-position: center;
     background-size: 1000px 600px;
     background-repeat: no-repeat;
+    padding-top: 0;
 }
 .information{
     margin-bottom: 10px;
     color: navy;
 }
-/* @media(min-width:1000px){
-    
-} */
+@media(max-width:830px){
+    .moanaPortfolio{
+        padding-top: 10px;
+        background: rgb(211, 211, 211, .7);
+        border-radius: 2%;
+        width: 230px;
+        height: 180px;
+        margin-left: 40px;
+        padding-left: 40px;
+    }
+}
+@media(max-width:715px){
+    div{
+        display: none;
+    }
+}
+@media(min-width:1000px){
+    div{
+        display: none;
+    }
+}
+.aboutMoana{
+    padding-top: 35px;
+}
