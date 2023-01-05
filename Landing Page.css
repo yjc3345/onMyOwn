@@ -1,11 +1,13 @@
 
 body{
     margin: 0;
+    /* width: 1000px;
+    text-align: center; */
 }
 #hello{
     background-image: url(moana_topFullWall_04f.png);
     background-position: center;
-    background-size: 1000px 600px;
+    background-size: 1fr 600px;
     background-repeat: no-repeat;
 }
 .navigation{
@@ -71,7 +73,7 @@ body{
 }
 .family div{
     border: 2px solid white;
-    background: rgb(211, 211, 211, .4);
+    background: rgba(248, 243, 243, .4);
     border-radius: 10%;
     padding: 20px;
     width: 180px;
@@ -83,30 +85,31 @@ body{
     height: 80px;
 }
 .welcome{
-    background-image: url(motunui.webp);
+    background-image: url(motunui.jpeg);
     background-position: center;
-    background-size: 1000px 600px;
+    background-size: 1fr 600px;
     background-repeat: no-repeat;
 }
 .third{
     display: grid;
-    grid-template-columns: 400px 1fr;
+    grid-template-columns: 1fr 1fr;
     padding-top: 100px;
 }
 .lastPic{
     position: relative;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 20%;
+    size: 1fr 350px;
 }
 #one{
     position: absolute;
     top: 120px;
-    left: 80px;
+    left: 50px;
 }
 #two{
     position: relative;
     top: 250px;
-    left: 30px;
+    left: 0px;
 }
 .moanaPortfolio{
     display: grid;
@@ -122,7 +125,7 @@ body{
 .third{
     background-image: url(imageedit_1_8064820982.png);
     background-position: center;
-    background-size: 1000px 600px;
+    background-size: 1fr 600px;
     background-repeat: no-repeat;
     padding-top: 0;
 }
@@ -130,7 +133,10 @@ body{
     margin-bottom: 10px;
     color: navy;
 }
-@media(max-width:830px){
+@media(max-width:900px){
+    body{
+        width: 900px;
+    }
     .moanaPortfolio{
         padding-top: 10px;
         background: rgb(211, 211, 211, .7);
@@ -141,16 +147,8 @@ body{
         padding-left: 40px;
     }
 }
-@media(max-width:715px){
-    div{
-        display: none;
-    }
-}
-@media(min-width:1000px){
-    div{
-        display: none;
-    }
-}
 .aboutMoana{
     padding-top: 35px;
+    padding-right: 35px;
+    padding-left: 35px;
 }
