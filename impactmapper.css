@@ -49,7 +49,7 @@ header{
     text-align: center;
 }
 .moreInfo div{
-    border: 1px solid powderblue;
+    border: 0px;
     background-color: powderblue;
     padding: 10px;
     margin: 5px;
@@ -62,4 +62,22 @@ header{
     body{
         width: 750px;
     }
+}
+#request:hover{
+    width: 195px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size:18px;
+    font-weight:800;
+} 
+.navigationBar div:hover{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.moreInfo div:hover{
+    padding: 40px;
+    font-weight: 600;
+    color: darkblue;
+    background: linear-gradient(powderblue, white);
 }
