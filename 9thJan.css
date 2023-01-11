@@ -1,0 +1,63 @@
+header{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: top;
+}
+.navigationBar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navigationBar div{
+    margin-right: 65px;
+    color: gray;
+    font-size: 18px;
+}
+#login{
+    border: 1px solid #ff6a6d;
+    background-color: #ff6a6d;
+    border-radius: 20px;
+    padding: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-left: 30px;
+    color: white;
+    font-size: 18px;
+}
+#logo img{
+    width: 130px;
+    height: 35px;
+}
+body{
+    background-image: url(bg.png);
+    background-position: center;
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.intro{
+    margin-top: 80px;
+    margin-left: 150px;
+    width: 550px;
+
+}
+#beautiful{
+    font-size: 50px;
+    font-weight: 900;
+}
+#forMe{
+    font-size: 19px;
+    text-indent: 30px;
+    font-weight: 200;
+    line-height: 35px;
+    margin-top: 40px;
+}
