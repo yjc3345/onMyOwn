@@ -117,5 +117,38 @@ body{
     box-shadow: none;
 }
 #logo :hover{
+    filter: brightness(1.3);
+}
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modalBG{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
     
+}
+.modalContent{
+    position: fixed;
+    background-color: white;
+    width: 500px;
+} 
+#X{
+    all: unset;
+    position: relative;
+    margin-left: 505px;
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+    top: -10px;
+}
+.hidden{
+    display: none;
 }

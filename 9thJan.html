@@ -3,11 +3,12 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="9thJan.css">
+        <script src="9thJan.js"></script>
         <title></title>
     </head>
     <body>
         <header>
-            <div id="logo"><img src="logo.svg"></div>
+            <div id="logo"><a href="9thJan.html"><img src="logo.svg"></a></div>
             <div class="nav">
                 <div class="navigationBar">    
                     <div id="home">Home</div>
@@ -15,7 +16,7 @@
                     <div id="contact">Contact</div>
                     <div id="pricing">Pricing</div>
                 </div>
-                <div id="login">Login</div>
+                <button id="login$$">Login</button>
             </div>
         </header>
 
@@ -28,6 +29,15 @@
                 <div id="service">Service</div>
                 <div id="signUp">Sign Up</div>
             </div>
+            </div>
+        </div>
+
+        <div class="modal hidden">
+            <div class="modalBG"></div>
+            <div class="modalContent">
+                <button id="X">x</button>
+                <div><h1>Personal Area</h1></div>
+                <div>Enter your username and password</div>
             </div>
         </div>
     </body>
