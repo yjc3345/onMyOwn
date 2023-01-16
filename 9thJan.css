@@ -120,33 +120,97 @@ body{
     filter: brightness(1.3);
 }
 .modal{
-    position: absolute;
+    position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     display: none;
-}
-.modalBG{
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 100%;
-    height: 100%;
-    
+    background-color: rgba(0, 0, 0, 0.8);    
 }
 .modalContent{
+    top: 15%;
+    left: 35%;
     position: fixed;
     background-color: white;
-    width: 500px;
+    width: 340px;
+    height: 325px;
+    padding: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+
 } 
-#X{
+#personal{
+    margin-top: -25px;
+    font-size: 30px;
+    margin-bottom: 24px;
+}
+#x{
     all: unset;
     position: relative;
-    margin-left: 505px;
+    margin-left: 435px;
     color: white;
     font-weight: 500;
     font-size: 30px;
-    top: -10px;
+    top: -60px;
+}
+#forgotPW{
+    color: black;
+    margin-left: 50px;
+    font-size: 17px;
+    text-decoration: none;
+    text-decoration: underline;
+}
+#enter{
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+#check{
+    font-size: 17px;
+}
+#username{
+    font-size: 20px;
+    border: 2px black solid;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 25px;
+    width: 245px;
+}
+#password{
+    font-size: 20px;
+    border: 2px black solid;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 25px;
+    width: 245px;
+}
+#remember{
+    padding-left: 10px;
+}
+#enterLogin{
+    border: 1px solid #ff6a6d;
+    background-color: #ff6a6d;
+    border-radius: 40px;
+    padding: 20px;
+    padding-right: 85px;
+    padding-left: 85px;
+    margin-top: 30px;
+    margin-left: 50px;
+    color: white;
+    font-size: 18px;
+}
+#iForgot :hover{
+    text-decoration: none;
+}
+#check :hover{
+    color:#ff6a6d;
+}
+#enterHover :hover{
+    transform: translateY(-5px);
+    transition-duration: 1s;
 }
