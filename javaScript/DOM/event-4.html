@@ -6,14 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="warning">누르지마시오</div>
-    <script>
-        const warn = document.getElementById("warning")
-        warn.onclick=doNot;
+    <img src="11.jpg" id="bay">
 
-        function doNot(){
-            alert("누르지말랬지");
+    <script>
+        const bay = document.querySelector("#bay");
+        bay.onclick = function(event){
+            alert("클릭한 이미지 파일: " + this.src);
         }
-    </script>
+        </script>
+    
 </body>
 </html>
