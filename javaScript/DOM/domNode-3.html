@@ -17,7 +17,17 @@
             const newP = document.createElement("p");
             const txtNode = document.createTextNode("DOM은 document object model의 줄임말이다!");
             newP.appendChild(txtNode);
+
+            const newImg = document.createElement("img");
+            const srcNode = document.createAttribute("src");
+            const altNode = document.createAttribute("alt");
+            srcNode.value = "11.jpg";
+            altNode.value = "돔 트리 예제 이미지";
+            newImg.setAttributeNode(srcNode);
+            newImg.setAttributeNode(altNode);
+
             document.getElementById("info").appendChild(newP);
+            document.getElementById("info").appendChild(newImg);
         }
     </script>
     
