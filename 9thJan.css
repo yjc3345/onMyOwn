@@ -10,17 +10,14 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 10px;
 }
-.navigationBar{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-.navigationBar div{
+.navBtn{
     margin-right: 70px;
     color: gray;
     font-size: 18px;
+}
+.home{
+    color:#ff6a6d
 }
 #login{
     border: 1px solid #ff6a6d;
@@ -66,9 +63,6 @@ body{
 #forMe p{
     text-indent: 30px;
 }
-#home{
-    color: #ff6a6d;
-}
 .serviceSignup div{
     text-align: center;
     width: 60px;
@@ -80,33 +74,29 @@ body{
     margin-top: 45px;
     align-items: center;
 }
-#service{
+.serviceSignup div{
     border: 2px solid #ff6a6d;
-    background-color: #ff6a6d;
     border-radius: 50px;
-    margin-right: 25px;
     padding: 10px;
     padding-left: 12%;
     padding-right: 12%;
+}
+#service{
+    background-color: #ff6a6d;
+    margin-right: 25px;
     color: white;
     box-shadow: -15px 15px 17px rgb(226, 88, 91, .4);
 }
 #signUp{
-    border: 2px solid #ff6a6d;
-    border-radius: 50px;
-    padding: 10px;
-    padding-left: 12%;
-    padding-right: 12%;
     white-space: nowrap;
     color:#ff6a6d;
 }
-.navigationBar :hover{
+.navHover :hover{
     color:#ff6a6d;
 }
 .serviceSignup div:hover{
     transform: translateY(-5px);
     transition-duration: 1s;
-    
 }
 #login:hover{
     transform: translateY(-5px);
@@ -169,17 +159,7 @@ body{
 #check{
     font-size: 17px;
 }
-#username{
-    font-size: 20px;
-    border: 2px black solid;
-    margin-bottom: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 25px;
-    width: 245px;
-}
-#password{
+.userInfo{
     font-size: 20px;
     border: 2px black solid;
     margin-bottom: 10px;
@@ -206,9 +186,6 @@ body{
 }
 #iForgot :hover{
     text-decoration: none;
-}
-#check :hover{
-    color:#ff6a6d;
 }
 #enterHover :hover{
     transform: translateY(-5px);
