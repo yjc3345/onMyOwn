@@ -1,14 +1,17 @@
-
 body{
     margin: 0;
-    /* width: 1000px;
-    text-align: center; */
 }
-#hello{
-    background-image: url(moana_topFullWall_04f.png);
+.backgroundImg{
     background-position: center;
-    background-size: 1fr 600px;
     background-repeat: no-repeat;
+}
+header{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    padding-top: 10px;
+}
+header :nth-child(1){
+    padding-left: 10px;
 }
 .navigation{
     display: flex;
@@ -19,21 +22,13 @@ body{
     padding-left: 10px;
     padding-right: 20px;
 }
-.header{
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    padding-top: 10px;
-}
-#logo{
-    padding-left: 10px;
-}
 .moana{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
 }
 .moana img{
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 .letMeIntroduceMoana{
     text-align: center;
@@ -84,12 +79,6 @@ body{
     width: 70px;
     height: 80px;
 }
-.welcome{
-    background-image: url(motunui.jpeg);
-    background-position: center;
-    background-size: 1fr 600px;
-    background-repeat: no-repeat;
-}
 .third{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -103,13 +92,13 @@ body{
 }
 #one{
     position: absolute;
-    top: 120px;
-    left: 50px;
+    top: 75px;
+    left: 140px;
 }
 #two{
     position: relative;
-    top: 250px;
-    left: 0px;
+    top: 225px;
+    left: 280px;
 }
 .moanaPortfolio{
     display: grid;
@@ -121,13 +110,6 @@ body{
     height: 150px;
     margin-left: 40px;
     padding-left: 40px;
-}
-.third{
-    background-image: url(imageedit_1_8064820982.png);
-    background-position: center;
-    background-size: 1fr 600px;
-    background-repeat: no-repeat;
-    padding-top: 0;
 }
 .information{
     margin-bottom: 10px;
