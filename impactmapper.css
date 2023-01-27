@@ -1,3 +1,17 @@
+@media(max-width:750px){
+    body{
+        width: 750px;
+    }
+}
+header{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+    padding-top: 5px;
+}
+#logo{
+    padding-top: 10px;
+    padding-left: 20px;
+}
 .navigationBar{
     display: flex;
     justify-content: flex-end;
@@ -6,14 +20,12 @@
 .navigationBar div{
     padding-left: 10px;
     padding-right: 10px;
-    padding: 10px;
-    
+    padding: 10px;    
 }
-header{
-    display:grid;
-    grid-template-columns: 150px 1fr;
-    padding-top: 5px;
-
+.navigationBar div:hover{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 #LogIn{
     border: 1px solid black;
@@ -23,9 +35,9 @@ header{
     padding-top: 9px;
     margin-right: 20px;
 }
-#logo{
-    padding-top: 10px;
-    padding-left: 20px;
+.introduce{
+    margin: 50px;
+    margin-top: 90px;
 }
 #request{
     border: 1px solid rgb(238, 90, 67);
@@ -37,10 +49,13 @@ header{
     background-color: rgb(238, 90, 67);
     color: white ;
 }
-.introduce{
-    margin: 50px;
-    margin-top: 90px;
-}
+#request:hover{
+    width: 195px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size:18px;
+    font-weight:800;
+} 
 .moreInfo{
     display: flex;
     justify-content: center;
@@ -55,29 +70,38 @@ header{
     margin: 5px;
     border-radius: 20px;
     height: 270px;
-    flex: 1;
-
-}
-@media(max-width:750px){
-    body{
-        width: 750px;
-    }
-}
-#request:hover{
-    width: 195px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size:18px;
-    font-weight:800;
-} 
-.navigationBar div:hover{
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: underline;
+    flex: 1;    
 }
 .moreInfo div:hover{
     padding: 40px;
     font-weight: 600;
     color: darkblue;
     background: linear-gradient(powderblue, white);
+}
+.modalBackground{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(238, 90, 67, 0.3);
+    z-index: 1;
+    display: none;
+}
+.logInModal{
+    position: relative;
+    top: 25%;
+    left: 35%;
+    width: 400px;
+    height: 350px;
+    background-color: white;
+}
+.X{
+    position: relative;
+    top: 1%;
+    left: 101%;
+    border: none;
+    background:none;
+    color: transparent;
+    text-shadow: 0 0 0 rgb(238, 90, 67);
 }
