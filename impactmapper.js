@@ -1,10 +1,16 @@
 const request = document.getElementById("request");
-const logIn = document.getElementById("LogIn");
+const logIn = document.querySelector(".LogIn");
 const x = document.querySelector(".X");
 const modal = document.querySelector(".modalBackground");
+const enter = document.querySelector("#enterLogin");
 request.onclick= requestOnClick;
 logIn.onclick= loginOnClick;
 x.onclick= xOnClick;
+enter.onclick= enterOnClick;
+
+function enterOnClick(){
+    alert("없는 아이디 입니다.")
+}
 
 function requestOnClick(){
     alert('오 이런');
