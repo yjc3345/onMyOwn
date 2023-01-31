@@ -1,12 +1,14 @@
 const request = document.getElementById("request");
 const logIn = document.querySelector(".LogIn");
-const x = document.querySelector(".X");
-const modal = document.querySelector(".modalBackground");
-const enter = document.querySelector("#enterLogin");
-request.onclick= requestOnClick;
-logIn.onclick= loginOnClick;
-x.onclick= xOnClick;
-enter.onclick= enterOnClick;
+const x = document.querySelectorAll(".X");
+const modal = document.querySelectorAll(".modalBackground");
+const enterLogin = document.querySelectorAll(".enterLogin");
+const enterSignin = document.querySelectorAll(".enterSignin");
+
+function enterSigninOnClick(){
+    loginModalDisplay("none");
+    signinModalDisplay("block");
+}
 
 function enterOnClick(){
     alert("없는 아이디 입니다.")
@@ -17,16 +19,34 @@ function requestOnClick(){
 }
 
 function loginOnClick(){
-    display("block"); 
+    loginModalDisplay("block"); 
+    signinModalDisplay("none");
 }
 
 function xOnClick(){
-    display("none"); 
+    loginModalDisplay("none"); 
+    signinModalDisplay("none");
 }
 
-function display(yay){
-    modal.style.display = yay;
+function loginModalDisplay(yay){
+    modal[0].style.display = yay;
 }
+function signinModalDisplay(yay){
+    modal[1].style.display = yay;
+}
+
+function signedIn(){
+    alert("회원가입 실패")
+}
+
+request.onclick= requestOnClick;
+logIn.onclick= loginOnClick;
+x[0].onclick= xOnClick;
+x[1].onclick= xOnClick;
+enterLogin[0].onclick= enterOnClick;
+enterSignin[0].onclick= enterSigninOnClick;
+enterSignin[1].onclick= signedIn;
+enterLogin[1].onclick=loginOnClick;
 
 
 
