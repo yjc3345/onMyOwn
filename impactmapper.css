@@ -148,3 +148,8 @@ header{
     background-color: transparent;
     padding: 5px;
 }
+.enterSignin:active,
+.enterLogin:active{
+	background-color: rgb(238, 90, 67);
+    color: white;
+}
