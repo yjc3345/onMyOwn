@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+}
+.backgroundImg{
+    background-position: center;
+    background-repeat: no-repeat;
+}
+header{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    padding-top: 10px;
+}
+header :nth-child(1){
+    padding-left: 10px;
+}
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.navigation div{
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.moana img{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.letMeIntroduceMoana{
+    text-align: center;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.navigation a{
+    color: black;
+    text-decoration: none;
+}
+.about div{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    border: solid 2px palevioletred;
+    color: white;
+}
+.about a{
+    color: white;
+    text-decoration: none;
+}
+#introduceMotunui{
+    text-align: center;
+
+}
+.family{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.family div{
+    border: 2px solid white;
+    background: rgba(248, 243, 243, .4);
+    border-radius: 10%;
+    padding: 20px;
+    width: 180px;
+    height: 200px;
+}
+.family img{
+    border-radius: 50%;
+    width: 70px;
+    height: 80px;
+}
+.third{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 100px;
+}
+.lastPic{
+    position: relative;
+    top: 0px;
+    left: 20%;
+    size: 1fr 350px;
+}
+#one{
+    position: absolute;
+    top: 75px;
+    left: 140px;
+}
+#two{
+    position: relative;
+    top: 225px;
+    left: 280px;
+}
+.moanaPortfolio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 10px;
+    background: rgb(211, 211, 211, .7);
+    border-radius: 2%;
+    width: 350px;
+    height: 150px;
+    margin-left: 40px;
+    padding-left: 40px;
+}
+.information{
+    margin-bottom: 10px;
+    color: navy;
+}
+@media(max-width:900px){
+    body{
+        width: 900px;
+    }
+    .moanaPortfolio{
+        padding-top: 10px;
+        background: rgb(211, 211, 211, .7);
+        border-radius: 2%;
+        width: 230px;
+        height: 180px;
+        margin-left: 40px;
+        padding-left: 40px;
+    }
+}
+.aboutMoana{
+    padding-top: 35px;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+a:hover{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+}
