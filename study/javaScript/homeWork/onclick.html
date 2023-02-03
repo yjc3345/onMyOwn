@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="warning">누르지마시오</div>
+    <script>
+        const warn = document.getElementById("warning")
+        warn.onclick=doNot;
+
+        function doNot(){
+            alert("누르지말랬지");
+        }
+    </script>
+</body>
+</html>
