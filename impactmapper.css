@@ -66,9 +66,11 @@ header {
 	border-radius: 20px;
 	height: 270px;
 	flex: 1;
+	margin-bottom: 40px;
 }
 .moreInfo div:hover {
-	padding: 40px;
+	padding: 20px;
+	margin-bottom: 0px;
 	font-weight: 600;
 	color: darkblue;
 	background: linear-gradient(powderblue, white);
