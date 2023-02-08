@@ -1,0 +1,28 @@
+.section {
+	/* overflow: hidden; */
+	transition: max-height 0.5s ease-out;
+	height: auto;
+	max-height: 600px;
+}
+
+.section.collapsed {
+	max-height: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 10px;
+}
+
+.container {
+	border: 3px solid #393d4f;
+	margin: 0 auto;
+	max-width: 300px;
+	border-radius: 3px;
+}
+.container .section {
+	border: 3px solid #ccc;
+}
