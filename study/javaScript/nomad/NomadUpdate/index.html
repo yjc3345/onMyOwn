@@ -10,12 +10,31 @@
 </head>
 
 <body>
-    <form id="login-form">
-        <input required maxlength="15" type="text" placeholder="What is your name?">
-        <input type="submit" value="Log In">
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <script src="app.js"></script>
+    <div class="content1">
+        <form id="login-form" class="hidden">
+            <input required maxlength="15" type="text" placeholder="What is your name?">
+            <input type="submit" value="Log In">
+        </form>
+        <div class="content2">
+            <h1 id="clock">00: 00: 00</h1>
+            <div class="content3">
+                <h2 id="greeting" class="hidden"></h2>
+                <form id="todo-form">
+                    <input type="text" placeholder="Write a To Do and Press Enter">
+                </form>
+                <ul id="todo-list"></ul>
+                <div id="quote">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="greeting.js"></script>
+    <script src="clock.js"></script>
+    <script src="quotes.js"></script>
+    <script src="background.js"></script>
+    <script src="todo.js"></script>
 </body>
 
 </html>
