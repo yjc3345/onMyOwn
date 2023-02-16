@@ -59,6 +59,9 @@ li {
 	width: 100%;
 	overflow: scroll;
 }
+li::-webkit-scrollbar {
+	display: none;
+}
 li :nth-child(2) {
 	overflow: hidden;
 }
