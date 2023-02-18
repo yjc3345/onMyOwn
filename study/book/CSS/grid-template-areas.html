@@ -17,37 +17,33 @@
 
         #header {
             grid-area: header;
+            background-color: wheat;
         }
 
         #sidebar {
             grid-area: sidebar;
+            background-color: skyblue;
+
         }
 
         #content {
             grid-area: content;
+            background-color: violet;
         }
 
         #footer {
             grid-area: footer;
-        }
-
-        .grid-item {
-            color: white;
-            background-color: #ff5252;
-        }
-
-        .grid-item:nth-child(2n) {
-            background-color: #bf5e5e;
+            background-color: orange;
         }
     </style>
 </head>
 
 <body>
     <div class="grid-container">
-        <div class="grid-item">item-1</div>
-        <div class="grid-item">item-2</div>
-        <div class="grid-item">item-3</div>
-        <div class="grid-item">item-4</div>
+        <p id="header">header</p>
+        <p id="sidebar">sidebar</p>
+        <p id="content">content</p>
+        <p id="footer">footer</p>
     </div>
 </body>
 
