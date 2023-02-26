@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* html {
+            cursor: none;
+        } */
+
+        body {
+            background-color: black;
+            ;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        .cursor_item {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            top: -5px;
+            left: -5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>test</h1>
+    <div class="cursor_item"></div>
+    <script>
+        const h1 = document.querySelector('h1');
+        let x = 0;
+        let y = 0;
+        let mx = 0;
+        let my = 0;
+        const speed = 0.1;
+        const cursor_item = document.querySelector('.cursor_item')
+
+        window.onload = function () {
+            window.addEventListener('mousemove', mouseFunc, false);
+
+            function mouseFunc(e) {
+                x = e.clientX;
+                y = e.clientY;
+                cursor_item.style.transform = `translate(${mx}px,${my}px)`;
+
+            }
+        }
+        loop()
+
+        function loop() {
+            mx += (x - mx) * speed
+            my += (y - my) * speed
+            // console.log(x, mx);
+
+            h1.innerHTML = `x: ${x} mx: ${mx}`;
+
+            cursor_item.style.transform = `translate(${mx}px,${my}px)`;
+            window.requestAnimationFrame(loop)
+        }
+    </script>
+</body>
+
+</html>

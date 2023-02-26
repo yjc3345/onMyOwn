@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 10000px;
+            background: linear-gradient(160deg, red, rgb(249, 167, 180), rgb(255, 187, 60), rgb(216, 226, 67), rgb(0, 174, 0), blue);
+        }
+
+        h1 {
+            color: white
+        }
+
+        .progress {
+            width: 100%;
+            position: fixed;
+            height: 5px;
+            top: 0;
+            left: 0;
+            background-color: black;
+            z-index: 1;
+        }
+
+        .bar {
+            width: 0%;
+            position: absolute;
+            height: 5px;
+            top: 0;
+            left: 0;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>scroll</h1>
+    <div class="progress">
+        <span class="bar"></span>
+    </div>
+    <script>
+        let scrollTop = 0;
+        const bar = document.querySelector('.bar');
+
+        window.onload = () => {
+
+        }
+
+        window.addEventListener("scroll", () => {
+            scrollTop = document.documentElement.scrollTop;
+            let per = Math.ceil(scrollTop / (document.body.scrollHeight - window.outerHeight) * 100);
+            console.log(`scroll: ${scrollTop}, per: ${per}`);
+            bar.style.width = `${per}%`
+        });
+    </script>
+</body>
+
+</html>
