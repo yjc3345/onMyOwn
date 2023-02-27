@@ -46,10 +46,6 @@
         let scrollTop = 0;
         const bar = document.querySelector('.bar');
 
-        window.onload = () => {
-
-        }
-
         window.addEventListener("scroll", () => {
             scrollTop = document.documentElement.scrollTop;
             let per = Math.ceil(scrollTop / (document.body.scrollHeight - window.outerHeight) * 100);
