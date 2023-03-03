@@ -13,21 +13,50 @@ const button = document.querySelector('.button');
 init();
 
 function init() {
+	buttonChange('게임로딩중...');
 	getWords();
 	wordInput.addEventListener('input', checkMatch);
 }
 
+//게임 실행
+function run() {
+	if (isPlaying) {
+		return;
+	}
+	isPlaying = true;
+	time = gameTime;
+	wordInput.focus();
+	scoreDisplay.innerText = 0;
+	timeInterval = setInterval(countDown, 1000);
+	checkInterval = setInterval(checkStatus, 50);
+	buttonChange('게임중');
+}
+
 function checkStatus() {
-	if (isPlaying && time === 0) {
+	if (!isPlaying && time === 0) {
 		buttonChange('게임시작');
 		clearInterval(checkInterval);
+		score = 0;
 	}
 }
 
 // 단어 불러오기
 function getWords() {
-	words = ['hello', 'apple', 'orange'];
-	buttonChange('게임시작');
+	axios
+		.get('https://random-word-api.herokuapp.com/word?number=100')
+		.then(function (response) {
+			response.data.forEach((word) => {
+				if (word.length < 10) {
+					words.push(word);
+				}
+			});
+			buttonChange('게임시작');
+			console.log(words);
+		})
+		.catch(function (error) {
+			// handle error
+			console.log(error);
+		});
 }
 
 //단어 일치 체크
@@ -40,17 +69,9 @@ function checkMatch() {
 		score++;
 		scoreDisplay.innerText = score;
 		time = gameTime;
+		const randomIndex = Math.floor(Math.random() * words.length);
+		wordDisplay.innerText = words[randomIndex];
 	}
-}
-//게임 실행
-function run() {
-	isPlaying = true;
-	time = gameTime;
-	wordInput.focus();
-	scoreDisplay.innerText = 0;
-	timeInterval = setInterval(countDown, 1000);
-	checkInterval = setInterval(checkStatus, 50);
-	buttonChange('게임중');
 }
 
 function countDown() {
