@@ -13,7 +13,7 @@ const button = document.querySelector('.button');
 init();
 
 function init() {
-	buttonChange('게임로딩중...');
+	buttonChange('게임 로딩중...');
 	getWords();
 	wordInput.addEventListener('input', checkMatch);
 }
