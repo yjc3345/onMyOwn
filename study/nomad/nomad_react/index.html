@@ -15,9 +15,70 @@
 <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <script type="text/babel">
-    function App() {
-        return (m);
+    //complicated
+    // function SaveBtn() {
+    //     return (
+    //         <button style={{
+    //             backgroundColor: "tomato",
+    //             color: "white",
+    //             padding: "10px 20px",
+    //             border: 0,
+    //             borderRadius: 10,
+    //         }}>
+    //             Save Changes
+    //         </button>
+    //     );
+    // }
+    // function ConfirmBtn() {
+    //     return (
+    //         <button style={{
+    //             backgroundColor: "tomato",
+    //             color: "white",
+    //             padding: "10px 20px",
+    //             border: 0,
+    //             borderRadius: 10,
+    //         }}>
+    //             Confirm
+    //         </button>
+    //     );
+    // }
+    // function App() {
+    //     return (
+    //         <div>
+    //             <SaveBtn />
+    //             <ConfirmBtn />
+    //         </div>
+    //     )
+    // }
+
+
+    //using props
+    function Btn(props) {
+        // function Btn({text, big}) {
+        return (
+            <button style={{
+                backgroundColor: "tomato",
+                color: "white",
+                padding: "10px 20px",
+                border: 0,
+                borderRadius: 10,
+                fontSize: props.big ? 20 : 16,
+                // fontSize: big ? 20 : 16,
+            }}>
+                {props.text}
+            </button>
+        );
     }
+    function App() {
+        return (
+            <div>
+                <Btn text="Save Changes" big={true} />
+                <Btn text="Confirm" big={false} />
+            </div>
+        )
+    }
+
+
     const root = document.getElementById("root");
     ReactDOM.render(<App />, root);
 </script>
