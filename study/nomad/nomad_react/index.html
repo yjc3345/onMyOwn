@@ -11,8 +11,9 @@
 <body>
     <div id="root"></div>
 </body>
-<script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/prop-types@15.7.2/prop-types.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <script type="text/babel">
     //complicated
@@ -53,27 +54,47 @@
 
 
     //using props
-    function Btn(props) {
-        // function Btn({text, big}) {
+    function Btn({ text, fontSize = 14 }) {
+        // function Btn(props) {
+        // console.log(text, "was rendered")
         return (
-            <button style={{
-                backgroundColor: "tomato",
-                color: "white",
-                padding: "10px 20px",
-                border: 0,
-                borderRadius: 10,
-                fontSize: props.big ? 20 : 16,
-                // fontSize: big ? 20 : 16,
-            }}>
-                {props.text}
+            <button
+                // onClick={onClick}
+                // // onClick={props.onClick}
+                style={{
+                    backgroundColor: "tomato",
+                    color: "white",
+                    padding: "10px 20px",
+                    border: 0,
+                    borderRadius: 10,
+                    // fontSize: fontSize,
+                    fontSize,
+                }}>
+                {text}
             </button>
         );
     }
+    const MemorizedBtn = React.memo(Btn);
+    // function App() {
+    //     const [value, setValue] = React.useState("Save Changes");
+    //     const changeValue = () => setValue("Revert Changes");
+    //     return (
+    //         <div>
+    //             <MemorizedBtn text={value} onClick={changeValue} />
+    //             <MemorizedBtn text="Confirm" />
+    //         </div>
+    //     )
+    // }
+    Btn.propTypes = {
+        text: PropTypes.string.isRequired,
+        fontSize: PropTypes.number,
+    }
+
     function App() {
         return (
             <div>
-                <Btn text="Save Changes" big={true} />
-                <Btn text="Confirm" big={false} />
+                <Btn text="Save Changes" fontSize={18} />
+                <Btn text="continue" />
             </div>
         )
     }
