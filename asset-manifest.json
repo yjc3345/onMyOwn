@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/onMyOwn/static/js/main.921bc923.js",
-    "index.html": "/onMyOwn/index.html",
-    "main.921bc923.js.map": "/onMyOwn/static/js/main.921bc923.js.map"
+    "main.js": "/onMyOwn/study/nomad/nomad_react/movieApp/static/js/main.921bc923.js",
+    "index.html": "/onMyOwn/study/nomad/nomad_react/movieApp/index.html",
+    "main.921bc923.js.map": "/onMyOwn/study/nomad/nomad_react/movieApp/static/js/main.921bc923.js.map"
   },
   "entrypoints": [
     "static/js/main.921bc923.js"
